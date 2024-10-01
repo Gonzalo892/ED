@@ -24,5 +24,4 @@ _italica_
 		v1.swap(v2);
 		imprime(v1);
 		imprime(v2);
-
-```c++
+```
