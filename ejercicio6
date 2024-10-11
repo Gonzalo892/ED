@@ -1,0 +1,30 @@
+# incluir  <iostream>​​
+# incluir  < iomanip >
+# incluir  < vector >
+# incluir  < mapa_desordenado >
+# incluir  < mapa >
+utilizando  el espacio de nombres  std ;
+int  principal ()
+{
+	srand ( tiempo ( 0 )); // semilla
+	vector< int > v;
+	// generar 100 aleatorias
+	// rango 1-100
+	para ( int i = 1 ; i < 100 ; i++)
+	{
+		v.push_back ( rand ( )% 101 );
+	}
+	// numero -> frecuencia
+	cout << " tamano " << v. tamaño () << endl;;
+	mapa_desordenado< int , int > grupo;
+	para ( const  int y numero: v)
+	{
+		grupo[numero]++;
+	}
+
+	para ( const  auto & numero: grupo)
+	{
+	cout << " núm " << número. primero <<
+	" frec " << número. segundo << endl;
+	}
+}
